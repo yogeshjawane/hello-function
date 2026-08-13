@@ -1,0 +1,15 @@
+{
+  "scriptFile" : "../hello-function-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.yogesh.Function.run",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "methods" : [ "GET", "POST" ],
+    "authLevel" : "FUNCTION"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
